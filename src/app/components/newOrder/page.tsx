@@ -1,7 +1,7 @@
-"use client"
+"use client";
 import axios from "axios";
 import { useState } from "react";
-import Button from "../buttons/page";
+import { Button } from "../buttons/page";
 import Form from "../form/page";
 import FormInput from "../inputs/page";
 import FormText from "../texts/page";

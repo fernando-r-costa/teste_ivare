@@ -1,11 +1,10 @@
 type ButtonProps = {
   children: React.ReactNode;
   onClick?: () => void;
-  className?: string;
 };
 
 // Componente de botão reutilizável com estilos padrão usando Tailwind CSS.
-const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
+export const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
   return (
     <button
       type="button"
@@ -16,5 +15,3 @@ const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
     </button>
   );
 };
-
-export default Button;
