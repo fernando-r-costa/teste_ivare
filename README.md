@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Controle de Pedidos
 
-## Getting Started
+Este projeto é um painel para controle de pedidos, desenvolvido com React, Next.js, Tailwind CSS e Node.js.
 
-First, run the development server:
+## Descrição
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+O projeto consiste em uma aplicação web que permite o gerenciamento de pedidos, com funcionalidades para adicionar novos pedidos, mover pedidos ativos para finalizados, e exibir listas de pedidos ativos e finalizados.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Funcionalidades
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Adicionar novos pedidos com descrição e endereço.
+- Calcular automaticamente o tempo estimado de entrega baseado em geocodificação e roteamento.
+- Mover pedidos da lista de ativos para finalizados.
+- Exibir listas separadas para pedidos ativos e finalizados.
+- Interface responsiva utilizando Tailwind CSS para estilos.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Como Funciona
 
-## Learn More
+1. **Adicionar Novos Pedidos:**
+   - Clique no botão "Novo Pedido".
+   - Preencha a descrição e o endereço do pedido.
+   - Confirme para adicionar o pedido à lista de ativos.
 
-To learn more about Next.js, take a look at the following resources:
+2. **Mover Pedidos para Finalizados:**
+   - Na lista de pedidos ativos, clique no botão "OK" ao lado do pedido concluído.
+   - O pedido será transferido para a lista de pedidos finalizados, exibindo o horário de conclusão.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Visualização de Pedidos:**
+   - Os pedidos são exibidos em listas separadas para ativos e finalizados.
+   - A lista de pedidos ativos mostra o tempo restante até a entrega estimada.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Instalação e Uso
 
-## Deploy on Vercel
+### Pré-requisitos
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Node.js (versão X.X.X ou superior)
+- npm (ou yarn)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Instalação
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/seu-usuario/seu-projeto.git
+   cd seu-projeto
+
+2. Instale as dependências:
+
+   ```bash
+   npm install
+   # ou, se estiver usando yarn
+   yarn install
+
+### Uso
+
+1. Para iniciar o servidor de desenvolvimento:
+
+   ```bash
+   npm run dev
+   # ou, com yarn
+   yarn dev
+
+2. Acesse a aplicação em <http://localhost:3000>.
+
+### Autor
+
+#### Fernando R Costa - [LinkedIn](https://www.linkedin.com/in/fernando-r-costa/)
+
+<img src="./public/frc.gif" width=120px alt="">
