@@ -60,7 +60,7 @@ O projeto consiste em uma aplicação web que permite o gerenciamento de pedidos
    # ou, com yarn
    yarn dev
 
-2. Acesse a aplicação em <http://localhost:3000>.
+2. Acesse a aplicação em <http://localhost:3000>
 
 ### Autor
 
