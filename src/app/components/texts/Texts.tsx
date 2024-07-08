@@ -4,7 +4,7 @@ type TextProps = {
 };
 
 // Componente de texto reutilizável com estilos variáveis para diferentes tipos de texto, como rótulos e mensagens de erro.
-const FormText: React.FC<TextProps> = ({ children, type }) => {
+export const FormText: React.FC<TextProps> = ({ children, type }) => {
   switch (type) {
     case "label-large":
       return <label className="text-2xl font-semibold">{children}</label>;
@@ -20,5 +20,3 @@ const FormText: React.FC<TextProps> = ({ children, type }) => {
       );
   }
 };
-
-export default FormText;

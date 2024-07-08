@@ -2,9 +2,9 @@
 import axios from "axios";
 import { useState } from "react";
 import { Button } from "../buttons/Button";
-import Form from "../form/page";
-import FormInput from "../inputs/page";
-import FormText from "../texts/page";
+import { Form } from "../form/Form";
+import { FormInput } from "../inputs/Inputs";
+import { FormText } from "../texts/Texts";
 import { Order } from "@/app/painel/page";
 
 type NewOrderProps = {
@@ -68,7 +68,7 @@ const calculateTime = async (origin: string, destination: string) => {
 };
 
 // Componente de formulário modal para adicionar novos pedidos, incluindo geocodificação e cálculo automático de tempo de entrega.
-const NewOrder = ({ closeModal, addOrder }: NewOrderProps) => {
+export const NewOrder = ({ closeModal, addOrder }: NewOrderProps) => {
   const [description, setDescription] = useState("");
   const [address, setAddress] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -136,5 +136,3 @@ const NewOrder = ({ closeModal, addOrder }: NewOrderProps) => {
     </div>
   );
 };
-
-export default NewOrder;

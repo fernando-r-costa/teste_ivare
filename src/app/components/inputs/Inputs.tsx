@@ -9,7 +9,11 @@ type InputProps = {
 };
 
 // Componente de entrada de formulário reutilizável para captura de texto.
-const FormInput: React.FC<InputProps> = ({ placeholder, value, onChange }) => {
+export const FormInput: React.FC<InputProps> = ({
+  placeholder,
+  value,
+  onChange,
+}) => {
   return (
     <input
       placeholder={placeholder}
@@ -19,5 +23,3 @@ const FormInput: React.FC<InputProps> = ({ placeholder, value, onChange }) => {
     />
   );
 };
-
-export default FormInput;

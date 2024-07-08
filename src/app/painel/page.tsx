@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 import { Button } from "../components/buttons/Button";
-import OrdersList from "../components/ordersList/page";
-import NewOrder from "../components/newOrder/page";
+import { OrdersList } from "../components/ordersList/OrdersList";
+import { NewOrder } from "../components/newOrder/NewOrder";
 
 export interface Order {
   id: string;

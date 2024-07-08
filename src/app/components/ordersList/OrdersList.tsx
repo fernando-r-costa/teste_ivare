@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useEffect, useState } from "react";
 import { Order } from "@/app/painel/page";
 
@@ -9,7 +9,11 @@ interface Props {
 }
 
 // Componente de lista de pedidos que exibe pedidos ativos ou finalizados, com contagem regressiva para entrega e opção para finalizar.
-const OrdersList: React.FC<Props> = ({ title, orders, moveToFinalized }) => {
+export const OrdersList: React.FC<Props> = ({
+  title,
+  orders,
+  moveToFinalized,
+}) => {
   const [timers, setTimers] = useState<{ [key: string]: number }>({});
 
   // useEffect para atualizar os timers a cada segundo e limpar o intervalo ao desmontar o componente.
@@ -88,5 +92,3 @@ const OrdersList: React.FC<Props> = ({ title, orders, moveToFinalized }) => {
     </div>
   );
 };
-
-export default OrdersList;
