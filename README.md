@@ -29,11 +29,15 @@ O projeto consiste em uma aplicação web que permite o gerenciamento de pedidos
    - Os pedidos são exibidos em listas separadas para ativos e finalizados.
    - A lista de pedidos ativos mostra o tempo restante até a entrega estimada.
 
+<img src="./public/Smartphone01.jpeg" alt="" width=240px><img src="./public/Smartphone02.jpeg" alt="" width=240px><img src="./public/Smartphone03.jpeg" alt="" width=240px><img src="./public/Smartphone04.jpeg" alt="" width=240px>
+
+<img src="./public/Laptop01.jpeg" alt="" width=860px><img src="./public/Laptop02.jpeg" alt="" width=860px><img src="./public/Laptop03.jpeg" alt="" width=860px><img src="./public/Laptop04.jpeg" alt="" width=860px>
+
 ## Instalação e Uso
 
 ### Pré-requisitos
 
-- Node.js (versão X.X.X ou superior)
+- Node.js (versão v22.4.0 ou superior)
 - npm (ou yarn)
 
 ### Instalação
@@ -41,8 +45,8 @@ O projeto consiste em uma aplicação web que permite o gerenciamento de pedidos
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-projeto.git
-   cd seu-projeto
+   git clone https://github.com/fernando-r-costa/teste_ivare.git
+   cd teste_ivare
 
 2. Instale as dependências:
 
@@ -62,8 +66,12 @@ O projeto consiste em uma aplicação web que permite o gerenciamento de pedidos
 
 2. Acesse a aplicação em <http://localhost:3000>
 
-### Autor
+## Deploy
 
-#### Fernando R Costa - [LinkedIn](https://www.linkedin.com/in/fernando-r-costa/)
+Acesse: <https://teste-ivare.vercel.app/>
 
-<img src="./public/frc.gif" width=120px alt="">
+## Autor
+
+**Fernando R Costa** - [LinkedIn](https://www.linkedin.com/in/fernando-r-costa/)
+
+<img src="./public/frc.gif" alt="Logo FRC" width=240px>
